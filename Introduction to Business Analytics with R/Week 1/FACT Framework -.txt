@@ -1,0 +1,6 @@
+FACT Framework :-
+
+F - Frame the question
+A - Assemble the data
+C - Calculate the results
+T - Tell others the result

@@ -1,0 +1,50 @@
+---
+title: "mod3_peer_review_MohammadSaud_Khan.rmd"
+output: html_document
+date: "2024-08-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction to Business Analytics with R
+
+# Convert character string to datetime object
+d <- as.Date("05/08/2020", format = "%m/%d/%Y")
+
+# Print the datetime object to check the format
+print(d)
+
+# Install the lubridate package (if not installed already)
+# install.packages("lubridate")
+
+# Load the lubridate package
+library(lubridate)
+
+# Extract year, month, week, and weekday from the datetime object
+d_year <- year(d)
+d_month <- month(d)
+d_week <- week(d)
+d_day <- wday(d)
+
+# Print the extracted values
+d_year
+d_month
+d_week
+d_day
+
+# Create a new date that is 25 days from the date 'd'
+d_25 <- d + 25
+
+# Print the new date
+print(d_25)
+
+# Calculate the difference between d and d_25
+diff <- difftime(d_25, d, units = "days")
+
+# Check if the difference is 25 days
+print(diff)
+
+
+
